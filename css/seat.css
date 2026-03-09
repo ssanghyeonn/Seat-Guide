@@ -1,0 +1,68 @@
+#seat_container {
+    border: 1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 800px;
+    /* 가로 확장 */
+    margin-left: 30px;
+    font-size: 1.5rem;
+
+    display: flex;
+    /* 🔥 가로 배치 */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#seat_container h2 {
+    margin-bottom: 20px;
+}
+
+/* 왼쪽 정보 영역 */
+#seat_info {
+    width: 40%;
+}
+
+/* 오른쪽 좌석 배치 */
+#seat_layout {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* 책상 (4자리) */
+.desk {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+}
+
+/* 좌석 */
+.seat {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+/* 상태 색상 */
+.empty {
+    background-color: green;
+}
+
+.used {
+    background-color: red;
+}
+
+.away {
+    background-color: orange;
+}
+
+#congestionBox {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}

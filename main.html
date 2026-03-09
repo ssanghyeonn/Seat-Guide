@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 좌석 안내 서비스</title>
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/todolist.css">
+    <link rel="stylesheet" href="css/seat.css"> <!-- 🔥 추가 -->
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js'></script>
+</head>
+
+<body>
+
+    <h1 id="title">실시간 좌석 안내 서비스</h1>
+
+    <form id="loginform">
+        <input required type="text" placeholder="총 몇 분 이신가요?" />
+        <button type="submit">확인</button>
+    </form>
+
+    <h2 id="greeting"></h2>
+    <h3 id="clock">00:00:00</h3>
+
+    <div id="container">
+
+
+        <div id='todo_container'>
+            <p id="cur_date">일정</p>
+            <form id="todoform">
+                <input required type="text" placeholder="write a ToDo" />
+            </form>
+            <ul id="todolist"></ul>
+        </div>
+
+        <!-- 🔥 좌석 현황 추가 -->
+        <div id="seat_container">
+
+            <!-- 왼쪽 정보 영역 -->
+            <div id="seat_info">
+                <h2>좌석 현황</h2>
+
+                <p>총 좌석 수 : <span id="totalSeats">0</span></p>
+                <p>사용 중 좌석 : <span id="usedSeats">0</span></p>
+                <p>남은 좌석 : <span id="remainSeats">0</span></p>
+                <p>자리 비움 : <span id="awaySeats">0</span></p>
+
+                <div id="congestionBox">
+                    혼잡도 : <span id="congestionPercent">0</span>%
+                </div>
+            </div>
+
+            <!-- 오른쪽 좌석 배치 -->
+            <div id="seat_layout"></div>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/seat.js"></script> <!-- 🔥 추가 -->
+
+</body>
+
+</html>

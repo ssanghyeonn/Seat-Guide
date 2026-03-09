@@ -1,0 +1,38 @@
+body {
+    padding: 100px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: -70px;
+    color: rgba(17, 17, 17, 0.9);
+    text-shadow:
+        -0.5px -0.5px 0 white,
+        0.5px -0.5px 0 white,
+        -0.5px 0.5px 0 white,
+        0.5px 0.5px 0 white;
+}
+
+#seat_container {
+    border: 1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 400px;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#congestionBox {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
