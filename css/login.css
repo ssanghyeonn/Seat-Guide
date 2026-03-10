@@ -1,31 +1,21 @@
 #loginform {
     text-align: center;
-    margin-top: -45px;
+    margin-top: 20px;
 }
 
 #loginform input {
+    width: 90%;
+    max-width: 240px;
     text-align: center;
-    margin-top: 40px;
     font-size: 1.3rem;
-    width: 240px;
+    margin-top: 10px;
     background-color: white;
-
-}
-
-#loginform input:nth-child(1):hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-#loginform input:nth-child(1):focus {
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
-
+    box-sizing: border-box;
 }
 
 #greeting {
     text-align: center;
-    margin: 5%;
+    margin: 10px 0;
     font-size: 2rem;
     color: yellowgreen;
 }

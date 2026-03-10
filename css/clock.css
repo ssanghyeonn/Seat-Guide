@@ -1,11 +1,22 @@
 #clock {
-    text-align: right;
-    margin-right: 170px;
+
+    text-align: center;
     font-size: 5rem;
+
     color: black;
+
     text-shadow:
         -0.5px -0.5px 0 white,
         0.5px -0.5px 0 white,
         -0.5px 0.5px 0 white,
         0.5px 0.5px 0 white;
+
+}
+
+@media(max-width:768px) {
+
+    #clock {
+        font-size: 3rem;
+    }
+
 }

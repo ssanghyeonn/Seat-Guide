@@ -1,64 +1,78 @@
 #todo_container {
+
     border: 1rem solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-}
 
-#cur_date {
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    margin: 0;
+    width: 100%;
+    max-width: 500px;
+
+    box-sizing: border-box;
+    min-height: 400px;
+
     padding: 15px;
 }
 
-#todoform {
+/* 날짜 */
+
+#cur_date {
+
     text-align: center;
+    color: white;
+    font-size: 2rem;
+
+    margin: 0;
+    padding: 10px;
+
+}
+
+/* 입력 */
+
+#todoform {
+
+    text-align: center;
+
 }
 
 #todoform input {
+
+    width: 100%;
+    max-width: 100%;
+
+    padding: 10px;
+
     text-align: center;
+    font-size: 1.5rem;
+
     background-color: rgba(225, 255, 255, 0.3);
     color: white;
-    font-size: 2rem;
-    width: 540px;
-    transition: all, 0.4s;
+
 }
 
-#todoform input:hover {
-    background-color: rgba(225, 255, 255, 0.4);
-}
-
-#todoform input:focus {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#todoform input::-webkit-input-placeholder {
-    color: rgb(50, 50, 50);
-}
+/* 리스트 */
 
 #todolist li {
-    color: black;
-    font-size: 2rem;
-    width: 540px;
-    list-style: none;
-}
 
-#todolist li:hover {
-    color: orange;
+    width: 100%;
+    max-width: 540px;
+
+    color: black;
+    font-size: 1.5rem;
+
+    list-style: none;
+    position: relative;
+
 }
 
 #todolist button {
+
     position: absolute;
-    right: 17%;
+    right: 5%;
+
     color: orange;
     font-weight: 700;
-    height: 40px;
-    width: 40px;
-    font-size: 1.2rem;
-}
 
-#todolist button:hover {
-    cursor: pointer;
+    height: 35px;
+    width: 35px;
+
 }

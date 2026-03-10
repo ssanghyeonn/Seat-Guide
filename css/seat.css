@@ -1,54 +1,78 @@
+/* =====================
+   좌석현황 박스
+===================== */
 #seat_container {
+
     border: 1rem solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.3);
+
     padding: 20px;
-    width: 800px;
-    /* 가로 확장 */
-    margin-left: 30px;
-    font-size: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 
     display: flex;
-    /* 🔥 가로 배치 */
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-#seat_container h2 {
-    margin-bottom: 20px;
-}
-
-/* 왼쪽 정보 영역 */
-#seat_info {
-    width: 40%;
-}
-
-/* 오른쪽 좌석 배치 */
-#seat_layout {
-    width: 55%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.4rem;
 }
 
-/* 책상 (4자리) */
-.desk {
+/* 좌석 정보 */
+#seat_info {
+
+    width: 40%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#seat_info p {
+    margin: 0;
+}
+
+/* 좌석 배치 */
+#seat_layout {
+
+    width: 55%;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+    justify-items: center;
+
+}
+
+/* 책상 */
+.desk {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     gap: 10px;
+
     padding: 10px;
+
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
+
 }
 
 /* 좌석 */
+
 .seat {
-    width: 50px;
-    height: 50px;
+
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
+
 }
 
-/* 상태 색상 */
 .empty {
     background-color: green;
 }
@@ -61,8 +85,32 @@
     background-color: orange;
 }
 
+/* 혼잡도 */
+
 #congestionBox {
-    margin-top: 20px;
+
+    margin-top: 15px;
     font-size: 2rem;
     font-weight: bold;
+
+}
+
+/* 모바일 */
+
+@media(max-width:768px) {
+
+    #seat_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #seat_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    #seat_layout {
+        width: 100%;
+    }
+
 }
