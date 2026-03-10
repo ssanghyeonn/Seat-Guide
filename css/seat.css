@@ -8,7 +8,13 @@
     background-color: rgba(255, 255, 255, 0.3);
 
     padding: 20px;
+
     width: 100%;
+    max-width: 650px;
+    /* PC에서 너무 커지는 것 방지 */
+
+    margin: 0 auto;
+
     box-sizing: border-box;
 
     display: flex;
@@ -38,7 +44,7 @@
 /* 좌석 배치 */
 #seat_layout {
 
-    width: 55%;
+    width: auto;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -67,8 +73,8 @@
 
 .seat {
 
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 8px;
 
 }
@@ -95,7 +101,9 @@
 
 }
 
-/* 모바일 */
+/* =====================
+   모바일
+===================== */
 
 @media(max-width:768px) {
 
